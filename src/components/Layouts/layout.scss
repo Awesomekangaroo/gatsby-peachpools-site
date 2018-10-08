@@ -1,0 +1,36 @@
+.SectionContainer {
+   position: relative;
+   overflow: hidden;
+   padding: 2rem 0;
+}
+
+.GridRowCol {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.GridContainer {
+   display: flex;
+   max-width: 1230px;
+   margin: 0 auto;
+   padding: 0 30px;
+}
+
+.GridRow {
+   align-items: flex-start;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.GridColumn {
+   flex-direction: column;
+}
+
+@media screen and (min-width: 767px) {
+   .GridRowCol {
+      flex-direction: row;
+   }
+}

@@ -1,0 +1,9 @@
+@mixin button-reset {
+   outline: none;
+   border: none;
+   background: transparent;
+   cursor: pointer;
+}
+
+$primary-green: #2d6c6d;
+$secondary-green: #acd7d8;
