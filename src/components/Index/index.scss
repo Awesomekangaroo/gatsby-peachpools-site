@@ -72,12 +72,24 @@
          margin: 0 auto;
       }
    }
+   .index__hero {
+      padding: 7rem 2rem;
+   }
    .index-hero__header {
       max-width: 50%;
       margin: 0 auto;
+      text-align: left;
+      .detail {
+         font-size: 18px;
+         color: #777;
+      }
       h3 {
          font-size: 38px;
       }
+   }
+
+   .index-hero__cta {
+      margin: 25px 0;
    }
 
    .promo__inner--text {

@@ -9,9 +9,16 @@
    z-index: 100;
 }
 
+.nav-section {
+   display: none;
+   &.is-active {
+      display: block;
+   }
+}
+
 .navbar-menu--btn {
    position: absolute;
-   top: 15px;
+   top: 25px;
    right: 5px;
    outline: none;
    border: none;
@@ -37,7 +44,7 @@
 
 .navbar-menu__container {
    width: 100%;
-   padding: 0 2rem;
+   padding: 0.5rem 2rem;
    background: #fff;
    .navbar-brand {
       order: -1;
@@ -57,14 +64,51 @@
 }
 
 .navbar-menu__cta {
-   outline: none;
-   border: none;
+   @include button-reset;
+   display: block;
+   margin: 1.5rem auto;
+   border-radius: 3px;
    color: #fff;
    font-size: 16px;
    font-weight: bold;
-   display: block;
-   margin: 1.5rem auto;
    padding: 10px 35px;
    background: $primary-green;
    cursor: pointer;
+}
+
+@media screen and (min-width: 767px) {
+   .navbar-menu--btn {
+      display: none;
+   }
+   .navbar-menu__item {
+      border: none;
+      margin: 0;
+      margin-right: 15px;
+      padding: 0;
+      &:last-child {
+         margin: 0;
+      }
+   }
+   .nav-section {
+      display: flex;
+      align-items: center;
+      &.flex-right {
+         order: 3;
+      }
+      &.flex-left {
+         margin-right: auto;
+      }
+   }
+   .navbar-menu__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .navbar-brand {
+         margin: 0 auto;
+         order: 1;
+      }
+   }
+   .navbar-menu__cta {
+      margin: 0;
+   }
 }

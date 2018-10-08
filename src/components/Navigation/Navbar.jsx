@@ -14,6 +14,7 @@ class Navbar extends Component {
     this.setState(prevState => ({ isMenuOpen: !prevState.isMenuOpen }))
 
   render() {
+    const menu = this.state;
     return(
       <nav className="navigation is-transparent">
         <div className="flex-item">
@@ -30,9 +31,7 @@ class Navbar extends Component {
                 </figure>
               </Link>
             </div>
-            {this.state.isMenuOpen ? 
-              <div>
-                <div className="nav-section--one">
+                <div className={`nav-section flex-left ${menu.isMenuOpen ? 'is-active': ''}`}>
                   <div className="navbar-menu__item">
                     <Link to="/about">
                       About
@@ -49,18 +48,14 @@ class Navbar extends Component {
                     </Link>
                   </div>
                 </div>
-              <div className="nav-section--two">
+              <div className={`nav-section flex-right ${menu.isMenuOpen ? 'is-active': ''}`}>
                 <div className="navbar-menu__item">
-                  <Link to="/products">
-                    1 (800) - NUMBER
-                  </Link>
+                  <span>+1 (678) 732-6400</span>
                 </div>
                 <Link to="/contact">
                   <button className="navbar-menu__cta">Get Started Now</button>
                 </Link>
               </div>
-            </div>
-            : null }
           </div>
         </div>
       </nav>
