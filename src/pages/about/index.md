@@ -1,6 +1,6 @@
 ---
 templateKey: about-page
-title: About PeachPools | About
+title: About PeachPools
 ---
 Swimming pools and spas provide an escape from the comfort of our homes. At PeachPools we take swimming pool service seriously and strive to solve your issues in pool care.
 
