@@ -8,14 +8,14 @@ description: >-
   from weekly pool service, seasonal opening and closing services, and repairs.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/004-tap.png
       text: >-
         Swimming Pool Repairs
 
 
         We repair cracks, damages, pool cleaners and heaters. Contact us if you
         have additional questions on repairs.
-    - image: /img/coffee-gear.png
+    - image: /img/001-swimming-pool.png
       text: >-
         Swimming Pool Openings and Closings.
 
@@ -23,7 +23,7 @@ intro:
         Our comprehensive openings and closings include applying pool covers,
         line prep, re-installation of equipment, inspection of equipment,
         rebalance of chemicals and vacuuming of pool floor.
-    - image: /img/tutorials.png
+    - image: /img/003-repair.png
       text: |-
         Equipment installation
 
@@ -33,7 +33,7 @@ intro:
         Pump
         Automatization
         Salt Systems and more
-    - image: /img/meeting-space.png
+    - image: /img/002-repair-tools.png
       text: Pool liner and pebble installation.
   heading: What we offer
   description: >-
