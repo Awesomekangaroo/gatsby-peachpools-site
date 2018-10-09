@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby'
+import { Link } from '@reach/router';
 import Layout from '../components/Layout'
 import IndexHero from '../components/Index/IndexHero';
 import ContactContainer from '../components/Contact/ContactContainer';
@@ -15,7 +16,8 @@ import '../components/Index/index.scss';
 
 // Index images
 import img1 from '../img/house_outdoor.jpg'
-import { Link } from '@reach/router';
+import img2 from '../img/outdoor_patio.jpg'
+import img3 from '../img/family_daughter.jpg'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -35,9 +37,9 @@ export default class IndexPage extends React.Component {
             <GridContainer>
               <GridColumn>
                 <div className="promo-section promo__inner--text">
-                  <p>You’re a small business owner with lots to do. We’re professional bookkeepers with experience serving entrepreneurs. </p>
+                  <p>You’re a homeowner with lots to do. And at PeachPools we are professional swimming pool experts with experience serving clients. </p>
                   <p>
-                  Let us take bookkeeping off your hands forever—so you can focus on what matters most.</p>
+                  Allow us to take swimming pool service off your hands forever—and upgrade your home experience.</p>
                 </div>
                 <hr />
               </GridColumn>
@@ -66,13 +68,13 @@ export default class IndexPage extends React.Component {
                 </Link>
               </div>
               <aside className="flex-item">
-                <img src={img1} alt="Patio outdoor image" />
+                <img src={img2} alt="Patio outdoor furiniture near poolside" />
               </aside>
             </GridRowCol>
             {/* Third Intro */}
             <GridRowCol>
               <aside className="flex-item">
-                <img src={img1} alt="Patio outdoor image" />
+                <img src={img3} alt="Mom and daughter outside playing on a green field" />
               </aside>
               <div className="promo-section flex-item">
                 <h2 className="title">More hours in your day</h2>

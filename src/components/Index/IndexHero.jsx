@@ -1,10 +1,9 @@
 import React from 'react';
-import img from '../../img/outdoor_place.jpg';
+import img from '../../img/watercolor.jpg';
 
 const style = {
-   background: `url(${img})`,
+   backgroundImage: `url(${img})`,
    backgroundRepeat: 'no-repeat',
-   backgroundPosition: 'top',
    backgroundSize: 'cover'
 }
 

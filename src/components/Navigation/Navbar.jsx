@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
-import logo from '../../img/logo.svg'
+import logo from '../../img/logo_transparent.png'
+import icon from '../../img/favicon.ico'
 
 import '../../sass/css-reset.scss';
 import './navigation.scss';
@@ -10,6 +12,10 @@ class Navbar extends Component {
     isMenuOpen: null
   }
 
+  componentDidMount() {
+    console.info('Development by http://eloydev.com - @eloydev');
+  }
+
   handleMenu = () => 
     this.setState(prevState => ({ isMenuOpen: !prevState.isMenuOpen }))
 
@@ -17,6 +23,11 @@ class Navbar extends Component {
     const menu = this.state;
     return(
       <nav className="navigation is-transparent">
+        <Helmet
+          link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${icon}` }
+          ]}
+        />
         <div className="flex-item">
           <button className="navbar-menu--btn" onClick={this.handleMenu}>
             <span></span>
@@ -25,9 +36,9 @@ class Navbar extends Component {
           </button>
           <div className="navbar-menu__container">
             <div className="navbar-brand">
-              <Link to="/" className="navbar-item">
+              <Link to="/">
                 <figure className="image">
-                  <img src={logo} alt="Peachpool brand logo" style={{ width: '88px' }} />
+                  <img src={logo} alt="Peachpool brand logo" style={{ width: '150px' }} />
                 </figure>
               </Link>
             </div>
