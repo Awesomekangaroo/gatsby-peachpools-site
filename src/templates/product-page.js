@@ -5,7 +5,8 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
-import Testimonials from '../components/Testimonials'
+import ContactContainer from '../components/Contact/ContactContainer';
+// import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 
 export const ProductPageTemplate = ({
@@ -18,7 +19,7 @@ export const ProductPageTemplate = ({
   testimonials,
   pricing,
 }) => (
-  <section className="section section--gradient">
+  <section className="section section--gradient product__page">
     <div className="container">
       <div className="section">
         <div className="columns">
@@ -26,14 +27,14 @@ export const ProductPageTemplate = ({
             <div className="content">
               <div
                 className="full-width-image-container margin-top-0"
-                style={{ backgroundImage: `url(${image})` }}
+                style={{ backgroundImage: `${image}` }}
               >
                 <h2
                   className="has-text-weight-bold is-size-1"
                   style={{
-                    boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-                    backgroundColor: '#f40',
-                    color: 'white',
+                    boxShadow: '0.5rem 0 0 #acd7d8, -0.5rem 0 0 #acd7d8',
+                    backgroundColor: '#acd7d8',
+                    color: '#fff',
                     padding: '1rem',
                   }}
                 >
@@ -49,15 +50,17 @@ export const ProductPageTemplate = ({
                 </div>
               </div>
               <Features gridItems={intro.blurbs} />
-              <div className="columns">
+
+              {/* <div className="columns">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-3">
                     {main.heading}
                   </h3>
                   <p>{main.description}</p>
                 </div>
-              </div>
-              <div className="tile is-ancestor">
+              </div> */}
+
+              {/* <div className="tile is-ancestor">
                 <div className="tile is-vertical">
                   <div className="tile">
                     <div className="tile is-parent is-vertical">
@@ -89,8 +92,9 @@ export const ProductPageTemplate = ({
                     </article>
                   </div>
                 </div>
-              </div>
-              <Testimonials testimonials={testimonials} />
+              </div> */}
+              {/* Currently not in use. */}
+              {/* <Testimonials testimonials={testimonials} /> */}
               <h2 className="has-text-weight-semibold is-size-2">
                 {pricing.heading}
               </h2>
@@ -150,6 +154,7 @@ const ProductPage = ({ data }) => {
         fullImage={frontmatter.full_image}
         pricing={frontmatter.pricing}
       />
+      <ContactContainer />
     </Layout>
   )
 }

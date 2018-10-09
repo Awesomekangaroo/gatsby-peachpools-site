@@ -99,6 +99,15 @@
    }
 }
 
+// Product page
+.product__page {
+   .has-text-centered {
+      img {
+         max-width: 50%;
+      }
+   }
+}
+
 @media screen and (min-width: 767px) {
    .promo-section {
       padding: 2rem 4rem;
