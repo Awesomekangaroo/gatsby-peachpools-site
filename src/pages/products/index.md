@@ -8,7 +8,7 @@ description: >-
   from weekly pool service, seasonal opening and closing services, and repairs.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/004-tap.png
       text: >-
         Swimming Pool Repairs
 
