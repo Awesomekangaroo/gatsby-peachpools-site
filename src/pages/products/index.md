@@ -9,6 +9,7 @@ description: >-
 intro:
   blurbs:
     - image: /img/004-tap.png
+      title: Pool Service Title
       text: >-
         Swimming Pool Repairs
 

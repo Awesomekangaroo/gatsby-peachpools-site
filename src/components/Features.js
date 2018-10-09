@@ -6,6 +6,7 @@ const FeatureGrid = ({ gridItems }) => (
     {gridItems.map(item => (
       <div key={item.image} className="column is-6">
         <section className="section">
+          {item.title && <h2>{item.title}</h2>}
           <p className="has-text-centered">
             <img alt="" src={item.image} />
           </p>
