@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
+import Helmet from 'react-helmet';
 import { graphql } from 'gatsby'
+
 import Layout from '../components/Layout'
 import ContactContainer from '../components/Contact/ContactContainer';
 import Content, { HTMLContent } from '../components/Content'
@@ -40,6 +42,12 @@ const AboutPage = ({ data }) => {
 
   return (
     <Layout>
+      <Helmet 
+        title={`${post.frontmatter.title} | PeachPools`}
+        meta={[
+        { name: "description", content: 'PeachPools is a swimming pool service business that serves in the Greater Atlanta area. We serve homeowners to easily maintain and upgrade their swimming pools.'}
+        ]}
+      />
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}

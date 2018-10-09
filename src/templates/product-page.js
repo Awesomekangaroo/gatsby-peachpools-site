@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
+
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
@@ -14,7 +16,6 @@ export const ProductPageTemplate = ({
   intro,
   main,
   testimonials,
-  fullImage,
   pricing,
 }) => (
   <section className="section section--gradient">
@@ -132,6 +133,12 @@ const ProductPage = ({ data }) => {
 
   return (
     <Layout>
+      <Helmet 
+        title={`${frontmatter.title} | PeachPools`}
+        meta={[
+        { name: "description", content: 'Swimming pool business located in Atlanta. We swimming pool services including pool management, maintenance, equipment installations, repairs and renovation services.'}
+        ]}
+      />
       <ProductPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}

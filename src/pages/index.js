@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Helmet from 'react-helmet';
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import IndexHero from '../components/Index/IndexHero';
@@ -21,6 +22,12 @@ export default class IndexPage extends React.Component {
     const greyBG = { background: '#f6f6f6' }
     return (
       <Layout>
+        <Helmet 
+          title={'PeachPools: Pool Services'}
+					meta={[
+						{ name: "description", content: 'PeachPools provides swimming pool services in Greater Atlanta area. Enjoy a better swimming pool experience and make your home the go-to spot.'}
+					]}
+        />
         <div className="index__landing">
           <IndexHero />
           {/* Intro Inner */}

@@ -76,6 +76,28 @@
    background: $primary-green;
 }
 
+// Contact page
+.contact__template {
+   padding: 5rem 1.5rem;
+   .title {
+      font-size: 32px;
+      color: #000;
+      margin-bottom: 20px;
+   }
+}
+
+.contact__body {
+   p {
+      margin-bottom: 15px;
+      font-size: 17px;
+   }
+   a {
+      color: lightseagreen;
+      font-weight: bold;
+      letter-spacing: -1px;
+   }
+}
+
 @media screen and (min-width: 767px) {
    .promo-section {
       padding: 2rem 4rem;
@@ -83,6 +105,9 @@
       .title {
          font-size: 30px;
       }
+   }
+   .contact__template {
+      padding: 8rem;
    }
    .index__landing {
       .flex-item {
