@@ -1,5 +1,11 @@
 @import '../../sass/css-reset.scss';
 
+.section--gradient {
+   padding: 4rem 1.5rem;
+   p {
+      color: #000;
+   }
+}
 
 .promo-section {
    padding: 2rem 0;
@@ -9,11 +15,23 @@
       color: #000;
    }
    p {
-      font-size: 17px;
       margin-bottom: 20px;
+      letter-spacing: -1px;
+      font-size: 17px;
       color: #333;
       &:last-child {
          margin-bottom: 0;
+      }
+   }
+   button {
+      @include button-reset;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: 1px solid #000;
+      border-radius: 3px;
+      &:hover {
+         background: $primary-green;
+         color: #fff;
       }
    }
 }
@@ -62,6 +80,9 @@
    .promo-section {
       padding: 2rem 4rem;
       text-align: left;
+      .title {
+         font-size: 30px;
+      }
    }
    .index__landing {
       .flex-item {

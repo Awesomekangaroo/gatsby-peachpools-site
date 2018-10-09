@@ -8,8 +8,8 @@ class ContactContainer extends Component {
       return(
          <div className="contact__container">
             <header className="contact__header">
-               <h2>Call me and try our services.</h2>
-               <p>Call me to begin a free consultation and provide a swimming pool service plan.</p>
+               <h2>Call and try our services.</h2>
+               <p>Call to begin a free consultation and provide a comprehensive swimming pool service plan.</p>
             </header>
             <ContactForm />
          </div>

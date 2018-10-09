@@ -7,7 +7,6 @@ import ContactContainer from '../components/Contact/ContactContainer';
 
 import GridContainer from '../components/Layouts/GridContainer';
 import GridColumn from '../components/Layouts/GridColumn';
-import GridRow from '../components/Layouts/GridRow';
 import GridRowCol from '../components/Layouts/GridRowCol';
 
 import SectionContainer from '../components/Layouts/SectionContainer';
@@ -15,11 +14,10 @@ import '../components/Index/index.scss';
 
 // Index images
 import img1 from '../img/house_outdoor.jpg'
+import { Link } from '@reach/router';
 
 export default class IndexPage extends React.Component {
   render() {
-    // const { data } = this.props
-    // const { edges: posts } = data.allMarkdownRemark
     const greyBG = { background: '#f6f6f6' }
     return (
       <Layout>
@@ -44,30 +42,37 @@ export default class IndexPage extends React.Component {
                 <img src={img1} alt="Patio outdoor image" />
               </aside>
               <div className="promo-section flex-item">
-                <h2 className="title">Service you need</h2>
-                <p>Data you can’t do without
-                Monthly financial statements and expense overviews keep you in control of your money. At-a-glance visual reports help you see the big picture and give you actionable insights to help you grow your business. You’ll never be in the dark again.</p>
+                <h2 className="title">Hassle free service you need</h2>
+                <p>Peachpools of Atlanta offers a range of services, pool maintenance packages, and swimming pool upgrades. While a home swimming pool provides hours of enjoyment for you and your family - wear & tear, nature, and age can restrain you from using your pool or spa as often as desired.</p>
+                <Link to={'/service'}>
+                  <button>Learn More</button>
+                </Link>
               </div>
             </GridRowCol>
             {/* Second Intro */}
             <GridRowCol>
               <div className="promo-section flex-item">
-                <h2 className="title">Service you need</h2>
-                <p>Data you can’t do without
-                Monthly financial statements and expense overviews keep you in control of your money. At-a-glance visual reports help you see the big picture and give you actionable insights to help you grow your business. You’ll never be in the dark again.</p>
+                <h2 className="title">Restore your pool to a new level</h2>
+                <p>The choice you make for your tile, finish and coping will determine the overall style of a swimming pool. Whichever you style you look to achieve, at Peachpools we offer several options to help make your pool eye-catching and will work closely with you through the design process. We enjoy an aesthetically pleasing pool and strive to make it your reality.</p>
+                <Link to={'/service'}>
+                  <button>Learn More</button>
+                </Link>
               </div>
               <aside className="flex-item">
                 <img src={img1} alt="Patio outdoor image" />
               </aside>
             </GridRowCol>
+            {/* Third Intro */}
             <GridRowCol>
               <aside className="flex-item">
                 <img src={img1} alt="Patio outdoor image" />
               </aside>
               <div className="promo-section flex-item">
-                <h2 className="title">Service you need</h2>
-                <p>Data you can’t do without
-                Monthly financial statements and expense overviews keep you in control of your money. At-a-glance visual reports help you see the big picture and give you actionable insights to help you grow your business. You’ll never be in the dark again.</p>
+                <h2 className="title">More hours in your day</h2>
+                <p>At Peachpools we have the ability to address current issues and those that may arise - which can and do happen.</p>
+                <Link to={'/service'}>
+                  <button>Learn More</button>
+                </Link>
               </div>
             </GridRowCol>
           </div>

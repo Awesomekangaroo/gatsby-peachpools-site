@@ -4,7 +4,7 @@ import logo from '../img/logo.svg';
 
 const Footer = () => (
    <footer className="main__footer">
-      <img src={logo} alt="Brand logo for footer" style={{ width: '88px' }}/>
+      <img src={logo} alt="Peachpool brand logo" style={{ width: '88px' }}/>
       <ul className="footer__links">
          <li>
             <Link to="/about">
