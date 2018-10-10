@@ -87,6 +87,7 @@
    }
 }
 
+
 .contact__body {
    p {
       margin-bottom: 15px;
@@ -100,11 +101,14 @@
 }
 
 // Product page
-.product__page {
+.product__template {
    .has-text-centered {
       img {
          max-width: 120px;
       }
+   }
+   .blurb-title {
+      margin-bottom: 35px;
    }
 }
 

@@ -19,7 +19,7 @@ export const ProductPageTemplate = ({
   testimonials,
   pricing,
 }) => (
-  <section className="section section--gradient product__page">
+  <section className="section section--gradient product__template">
     <div className="container">
       <div className="section">
         <div className="columns">

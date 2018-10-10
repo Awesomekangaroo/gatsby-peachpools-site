@@ -48,7 +48,7 @@ export default class IndexPage extends React.Component {
           {/* First Intro */}
             <GridRowCol>
               <aside className="flex-item">
-                <img src={img1} alt="Patio outdoor image" />
+                <img src={img1} alt="Outdoor patio with chairs" />
               </aside>
               <div className="promo-section flex-item">
                 <h2 className="title">Hassle free service you need</h2>

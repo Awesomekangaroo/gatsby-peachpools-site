@@ -9,25 +9,19 @@ description: >-
 intro:
   blurbs:
     - image: /img/004-tap.png
-      title: Pool Service Title
+      title: Swimming Pool Repairs
       text: >-
-        Swimming Pool Repairs
-
-
         We repair cracks, damages, pool cleaners and heaters. Contact us if you
         have additional questions on repairs.
     - image: /img/001-swimming-pool.png
+      title: Swimming Pool Openings and Closings.
       text: >-
-        Swimming Pool Openings and Closings.
-
-
         Our comprehensive openings and closings include applying pool covers,
         line prep, re-installation of equipment, inspection of equipment,
         rebalance of chemicals and vacuuming of pool floor.
     - image: /img/003-repair.png
+      title: Equipment installation
       text: |-
-        Equipment installation
-
         Allow us to install pool equipment including:
         Tile and coping application
         Heaters
@@ -35,7 +29,8 @@ intro:
         Automatization
         Salt Systems and more
     - image: /img/002-repair-tools.png
-      text: Pool liner and pebble installation.
+      title: Pool liner and pebble installation
+      text: If your poolscape is in need of some physical attention due to tear and leaks - we can repair the breakdown or apply and install a swimming pool foundation.
   heading: What we offer
   description: >-
     PeachPools certified swimming pool services provide a wide range of services
