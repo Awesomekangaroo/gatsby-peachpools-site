@@ -18,7 +18,7 @@ class ContactContainer extends Component {
                   <span>or</span>
                </span>
                <p>send us a line at:</p>
-               <a className="contact__body--email" href="mailto:andy@gmail.com">andy@gmail.com</a>
+               <a className="contact__body--email" href="mailto:garciandy@hotmail.com">garciandy@hotmail.com</a>
             </div>
          </div>
       )
