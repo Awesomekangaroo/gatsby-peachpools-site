@@ -60,7 +60,7 @@ class Navbar extends Component {
                   </div>
                 </div>
               <div className={`nav-section flex-right ${menu.isMenuOpen ? 'is-active': ''}`}>
-                <div className="navbar-menu__item">
+                <div className="navbar-menu__item nav__number">
                   <span>+1 (678) 732-6400</span>
                 </div>
                 <Link to="/contact">

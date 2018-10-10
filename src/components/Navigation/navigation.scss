@@ -65,6 +65,12 @@
    }
 }
 
+.nav__number {
+   color: #000;
+   letter-spacing: -1px;
+   font-weight: 500;
+}
+
 .navbar-menu__cta {
    @include button-reset;
    display: block;
@@ -85,7 +91,7 @@
    .navbar-menu__item {
       border: none;
       margin: 0;
-      margin-right: 15px;
+      margin-right: 20px;
       padding: 0;
       &:last-child {
          margin: 0;
