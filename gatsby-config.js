@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'PeachPools',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -18,6 +18,14 @@ module.exports = {
         path: `${__dirname}/src/img`,
         name: 'images',
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-107285127-2',
+        head: true,
+        cookie: "peachpools.com"
+      }
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',

@@ -15,8 +15,8 @@ export const ProductPageTemplate = ({
   heading,
   description,
   intro,
-  main,
-  testimonials,
+  // main,
+  // testimonials,
   pricing,
 }) => (
   <section className="section section--gradient product__template">
@@ -99,7 +99,8 @@ export const ProductPageTemplate = ({
                 {pricing.heading}
               </h2>
               <p className="is-size-5">{pricing.description}</p>
-              <Pricing data={pricing.plans} />
+              { pricing.plans &&
+                <Pricing data={pricing.plans} /> }
             </div>
           </div>
         </div>
@@ -210,12 +211,6 @@ export const productPageQuery = graphql`
         pricing {
           heading
           description
-          plans {
-            description
-            items
-            plan
-            price
-          }
         }
       }
     }

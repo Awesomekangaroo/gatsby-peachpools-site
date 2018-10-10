@@ -9,15 +9,18 @@ description: >-
 intro:
   blurbs:
     - image: /img/004-tap.png
+      title: Swimming pool repairs
       text: >-
         We repair cracks, damages, pool cleaners and heaters. Contact us if you
         have additional questions on repairs.
     - image: /img/001-swimming-pool.png
+      title: Pool opening & closings
       text: >-
         Our comprehensive openings and closings include applying pool covers,
         line prep, re-installation of equipment, inspection of equipment,
         rebalance of chemicals and vacuuming of pool floor.
     - image: /img/003-repair.png
+      title: Equipment installations
       text: |-
         Allow us to install pool equipment including:
         Tile and coping application
@@ -26,6 +29,7 @@ intro:
         Automatization
         Salt Systems and more
     - image: /img/002-repair-tools.png
+      title: Coping and finishes
       text: >-
         If your poolscape is in need of some physical attention due to tear and
         leaks - we can repair the breakdown or apply and install a swimming pool
