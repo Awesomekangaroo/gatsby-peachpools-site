@@ -49,7 +49,7 @@ class Navbar extends Component {
                     </Link>
               </div>
               <div className="navbar-menu__item">
-                <Link to="/products">
+                <Link to="/services">
                   Services
                     </Link>
               </div>

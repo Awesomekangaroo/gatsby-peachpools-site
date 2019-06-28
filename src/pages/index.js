@@ -53,7 +53,7 @@ export default class IndexPage extends React.Component {
               <div className="promo-section flex-item">
                 <h2 className="title">Hassle free service you need</h2>
                 <p>Peachpools of Atlanta offers a range of services, pool maintenance packages, and swimming pool upgrades. While a home swimming pool provides hours of enjoyment for you and your family - wear & tear, nature, and age can restrain you from using your pool or spa as often as desired.</p>
-                <Link to={'/products'}>
+                <Link to="/services">
                   <button>Learn More</button>
                 </Link>
               </div>
@@ -63,7 +63,7 @@ export default class IndexPage extends React.Component {
               <div className="promo-section flex-item">
                 <h2 className="title">Restore your pool to a new level</h2>
                 <p>The choice you make for your tile, finish and coping will determine the overall style of a swimming pool. Whichever you style you look to achieve, at Peachpools we offer several options to help make your pool eye-catching and will work closely with you through the design process. We enjoy an aesthetically pleasing pool and strive to make it your reality.</p>
-                <Link to={'/products'}>
+                <Link to="/services">
                   <button>Learn More</button>
                 </Link>
               </div>
@@ -79,7 +79,7 @@ export default class IndexPage extends React.Component {
               <div className="promo-section flex-item">
                 <h2 className="title">More hours in your day</h2>
                 <p>At Peachpools we have the ability to address current issues and those that may arise - which can and do happen.</p>
-                <Link to={'/products'}>
+                <Link to="/services">
                   <button>Learn More</button>
                 </Link>
               </div>
