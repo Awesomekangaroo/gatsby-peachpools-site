@@ -1,5 +1,6 @@
 import React from 'react';
 import img from '../../img/watercolor.jpg';
+import { Link } from 'gatsby';
 
 const style = {
    backgroundImage: `url(${img})`,
@@ -12,7 +13,12 @@ const IndexHero = () => (
       <header className="index-hero__header">
          <h3>You enjoy your swimming pool. We'll do the maintaining.</h3>
          <span className="detail">Atlanta swimming pool, maintenance business.</span>
-         <button className="index-hero__cta">Get Started Now</button>
+         <Link
+            className="index-hero__cta"
+            to="/contact"
+         >
+            Get Started Now
+         </Link>
       </header>
    </section>
 );

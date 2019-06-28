@@ -16,12 +16,12 @@ class Navbar extends Component {
     console.info('Development by http://eloydev.com - @eloydev');
   }
 
-  handleMenu = () => 
+  handleMenu = () =>
     this.setState(prevState => ({ isMenuOpen: !prevState.isMenuOpen }))
 
   render() {
     const menu = this.state;
-    return(
+    return (
       <nav className="navigation is-transparent">
         <Helmet
           link={[
@@ -42,31 +42,34 @@ class Navbar extends Component {
                 </figure>
               </Link>
             </div>
-                <div className={`nav-section flex-left ${menu.isMenuOpen ? 'is-active': ''}`}>
-                  <div className="navbar-menu__item">
-                    <Link to="/about">
-                      About
+            <div className={`nav-section flex-left ${menu.isMenuOpen ? 'is-active' : ''}`}>
+              <div className="navbar-menu__item">
+                <Link to="/about">
+                  About
                     </Link>
-                  </div>
-                  <div className="navbar-menu__item">
-                    <Link to="/products">
-                      Services
-                    </Link>
-                  </div>
-                  <div className="navbar-menu__item">
-                    <Link to="/contact">
-                      Contact
-                    </Link>
-                  </div>
-                </div>
-              <div className={`nav-section flex-right ${menu.isMenuOpen ? 'is-active': ''}`}>
-                <div className="navbar-menu__item nav__number">
-                  <span>+1 (678) 732-6400</span>
-                </div>
-                <Link to="/contact">
-                  <button className="navbar-menu__cta">Get Started Now</button>
-                </Link>
               </div>
+              <div className="navbar-menu__item">
+                <Link to="/products">
+                  Services
+                    </Link>
+              </div>
+              <div className="navbar-menu__item">
+                <Link to="/contact">
+                  Contact
+                    </Link>
+              </div>
+            </div>
+            <div className={`nav-section flex-right ${menu.isMenuOpen ? 'is-active' : ''}`}>
+              <div className="navbar-menu__item nav__number">
+                <span>+1 (678) 732-6400</span>
+              </div>
+              <Link
+                className="navbar-menu__cta"
+                to="/contact"
+              >
+                Get Started Now
+              </Link>
+            </div>
           </div>
         </div>
       </nav>

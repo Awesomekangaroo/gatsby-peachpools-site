@@ -19,39 +19,39 @@ export const ProductPageTemplate = ({
   // testimonials,
   pricing,
 }) => (
-  <section className="section section--gradient product__template">
-    <div className="container">
-      <div className="section">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="content">
-              <div
-                className="full-width-image-container margin-top-0"
-                style={{ backgroundImage: `url(${image})` }}
-              >
-                <h2
-                  className="has-text-weight-bold is-size-1"
-                  style={{
-                    boxShadow: '0.5rem 0 0 #acd7d8, -0.5rem 0 0 #acd7d8',
-                    backgroundColor: '#acd7d8',
-                    color: '#fff',
-                    padding: '1rem',
-                  }}
+    <section className="section section--gradient product__template">
+      <div className="container">
+        <div className="section">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="content">
+                <div
+                  className="full-width-image-container margin-top-0"
+                  style={{ backgroundImage: `url(${image})` }}
                 >
-                  {title}
-                </h2>
-              </div>
-              <div className="columns">
-                <div className="column is-7">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    {heading}
-                  </h3>
-                  <p>{description}</p>
+                  <h2
+                    className="has-text-weight-bold is-size-1"
+                    style={{
+                      boxShadow: '0.5rem 0 0 #acd7d8, -0.5rem 0 0 #acd7d8',
+                      backgroundColor: '#acd7d8',
+                      color: '#fff',
+                      padding: '1rem',
+                    }}
+                  >
+                    {title}
+                  </h2>
                 </div>
-              </div>
-              <Features gridItems={intro.blurbs} />
+                <div className="columns">
+                  <div className="column is-7">
+                    <h3 className="has-text-weight-semibold is-size-2">
+                      {heading}
+                    </h3>
+                    <p>{description}</p>
+                  </div>
+                </div>
+                <Features gridItems={intro.blurbs} />
 
-              {/* <div className="columns">
+                {/* <div className="columns">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-3">
                     {main.heading}
@@ -60,7 +60,7 @@ export const ProductPageTemplate = ({
                 </div>
               </div> */}
 
-              {/* <div className="tile is-ancestor">
+                {/* <div className="tile is-ancestor">
                 <div className="tile is-vertical">
                   <div className="tile">
                     <div className="tile is-parent is-vertical">
@@ -93,21 +93,21 @@ export const ProductPageTemplate = ({
                   </div>
                 </div>
               </div> */}
-              {/* Currently not in use. */}
-              {/* <Testimonials testimonials={testimonials} /> */}
-              <h2 className="has-text-weight-semibold is-size-2">
-                {pricing.heading}
-              </h2>
-              <p className="is-size-5">{pricing.description}</p>
-              { pricing.plans &&
-                <Pricing data={pricing.plans} /> }
+                {/* Currently not in use. */}
+                {/* <Testimonials testimonials={testimonials} /> */}
+                <h2 className="has-text-weight-semibold is-size-2">
+                  {pricing.heading}
+                </h2>
+                <p className="is-size-5">{pricing.description}</p>
+                {pricing.plans &&
+                  <Pricing data={pricing.plans} />}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-)
+    </section>
+  )
 
 ProductPageTemplate.propTypes = {
   image: PropTypes.string,
@@ -138,10 +138,13 @@ const ProductPage = ({ data }) => {
 
   return (
     <Layout>
-      <Helmet 
+      <Helmet
         title={`${frontmatter.title} | PeachPools`}
         meta={[
-        { name: "description", content: 'Swimming pool business located in Atlanta. We swimming pool services including pool management, maintenance, equipment installations, repairs and renovation services.'}
+          {
+            name: "description",
+            content: 'Swimming pool services including pool management, maintenance, equipment installations, repairs and renovation services.'
+          }
         ]}
       />
       <ProductPageTemplate
